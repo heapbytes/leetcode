@@ -7,13 +7,11 @@ class Solution:
 
             if i == '+':
                 ans.append( ans[-1] + ans[-2] )
-            if i == 'D':
+            elif i == 'D':
                 ans.append(2 * ans[-1])
-            if i == 'C':
+            elif i == 'C':
                 ans.pop()
-            try:
-                if int(i):
-                    ans.append(int(i))
-            except:
-                pass
+            else:
+                ans.append(int(i))
+                
         return sum(ans)
