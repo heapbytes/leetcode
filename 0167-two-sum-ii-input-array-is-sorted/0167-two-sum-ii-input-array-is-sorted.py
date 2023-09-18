@@ -6,10 +6,12 @@ class Solution:
       
       while left < right:
         
-        if nums[left] + nums[right] == target:
+        a = nums[left]
+        b = nums[right]
+        if a + b == target:
           return [left + 1, right + 1]
         
-        if nums[left] + nums[right] > target:
+        if a + b > target:
           right -= 1
         else:
           left += 1
