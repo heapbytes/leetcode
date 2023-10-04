@@ -3,7 +3,7 @@ bool judgeCircle(char * moves){
   int side = 0;
   int vert = 0;
   
-  for(int i=0; i<strlen(moves); i++){
+  for(int i=0; moves[i]; i++){
     
     if (moves[i] == 'U'){
       vert += 1;
